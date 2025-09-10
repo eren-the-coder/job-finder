@@ -1,10 +1,30 @@
-import { StyleSheet, View } from "react-native"
+import { Nearbyjobs, Popularjobs, Welcome } from "@/components"
+import { COLORS, SIZES } from "@/constants"
+import { SafeAreaView, ScrollView, StyleSheet, View } from "react-native"
 
 const index = () => {
   return (
-    <View>
-      
-    </View>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: COLORS.lightWhite
+      }}
+    >
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+      >
+        <View
+          style={{
+            flex: 1,
+            padding: SIZES.medium
+          }}
+        >
+          <Welcome />
+          <Popularjobs />
+          <Nearbyjobs />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   )
 }
 
