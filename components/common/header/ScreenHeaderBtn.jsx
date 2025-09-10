@@ -1,12 +1,16 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import React from 'react';
+import { Image, TouchableOpacity } from 'react-native';
 
-
-const ScreenHeaderBtn = () => {
+const ScreenHeaderBtn = ({ iconUrl, dimension }) => {
   return (
-    <View>
-      <Text>ScreenHeaderBtn</Text>
-    </View>
+    <TouchableOpacity>
+      <Image source={iconUrl} 
+        style={{
+          width: dimension,
+          height: dimension
+        }}
+      />
+    </TouchableOpacity>
   )
 }
 

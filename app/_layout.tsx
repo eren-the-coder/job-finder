@@ -1,4 +1,5 @@
 import { ScreenHeaderBtn } from '@/components/index';
+import { icons, images } from '@/constants';
 import { Stack } from 'expo-router';
 
 export default function RootLayout() {
@@ -9,10 +10,10 @@ export default function RootLayout() {
         options={{
           headerLeft: () => (
             //iconUrl={icons.menu} dimensions="60%"
-            <ScreenHeaderBtn />
+            <ScreenHeaderBtn iconUrl={icons.menu} dimension={25} />
           ),
           headerRight: () => (
-            <ScreenHeaderBtn />
+            <ScreenHeaderBtn iconUrl={images.profile}  dimension={25} />
           ),
           headerTitle: "",
           headerShadowVisible: false
