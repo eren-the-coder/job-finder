@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Deepseek UI's",
-    "slug": "Deepseek UI's",
+    "name": "jobfinder",
+    "slug": "jobfinder",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "Deepseek UI's",
+    "scheme": "jobfinder",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
